@@ -5,7 +5,7 @@ app.controller('HelloController', function ($scope) {
     $scope.sayHello = function () {
         this.showHelloWords = true
     }
-    $scope.$watch(() => $scope.userName, (value, preValue) => {
+    $scope.$watch(() => [$scope.userName], (value, preValue) => {
       console.log(`userName changes from "${preValue}" to "${value}"`);
-    })
+    }, true);
 });
