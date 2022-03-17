@@ -12,5 +12,5 @@ Uncaught Error: [$rootScope:infdig] 10 $digest() iterations reached. Aborting!
 
 ```
 npm install
-npm run demo
+npm start
 ```
